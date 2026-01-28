@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRED - Fundación de Ropa y Enseres Domésticos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Header y navegación -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo-bred.jpg" alt="Logo BRED" class="logo-img">
+                <div class="logo-text">B<span>RED</span></div>
+            </div>
+            
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <nav id="main-nav">
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#acerca">Quiénes Somos</a></li>
+        <li><a href="#programas">Programas</a></li>
+        <li><a href="#impacto">Nuestro Impacto</a></li>
+        <li><a href="#ayudar">Cómo ayudar</a></li>
+        <li><a href="#aliados">Aliados</a></li>
+        <li><a href="#donar">Donar</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+</header>
+    <!-- Sección Hero / Inicio -->
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>BRED - Fundación de Ropa y Enseres Domésticos</h1>
+            <p class="hero-subtitle">Brindamos apoyo a familias y personas en situación vulnerable a través de la donación de ropa, muebles y enseres domésticos en buen estado. Tu donación puede cambiar vidas.</p>
+            <div class="hero-buttons">
+                <a href="#donar" class="btn btn-donate">
+                    <i class="fas fa-heart"></i> Donar Ahora
+                </a>
+                <a href="#ayudar" class="btn btn-volunteer">
+                    <i class="fas fa-hands-helping"></i> Cómo Ayudar
+                </a>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+    </section>
+
+   <!-- Sección Quiénes Somos -->
+<section id="acerca">
+    <div class="container">
+        <div class="section-title">
+            <h2>¿Quiénes Somos?</h2>
+            <p class="section-subtitle">BRED COLIMA IAP - Transformando vidas desde 2023</p>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <p class="lead">BRED (Banco de Ropa y Enseres Domésticos) es una institución de asistencia social privada sin fines de lucro, empeñada en contribuir al desarrollo de las familias que se encuentran viviendo en situación de pobreza.</p>
+                
+                <div class="mission-vision-values">
+                    <div class="mvv-card">
+                        <div class="mvv-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Misión</h3>
+                        <p>Contribuir con el desarrollo y mejoramiento de las familias que viven en situación de pobreza, a través del acceso a productos dignos para el vestir y el hogar.</p>
+                    </div>
+                    
+                    <div class="mvv-card">
+                        <div class="mvv-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Visión</h3>
+                        <p>Que las familias colimenses logren condiciones sostenibles de vida digna a través de una organización integrada a la comunidad.</p>
+                    </div>
+                    
+                    <div class="mvv-card">
+                        <div class="mvv-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Valores</h3>
+                        <ul class="values-list">
+                            <li><i class="fas fa-check-circle"></i> Respeto</li>
+                            <li><i class="fas fa-check-circle"></i> Solidaridad</li>
+                            <li><i class="fas fa-check-circle"></i> Empatía</li>
+                            <li><i class="fas fa-check-circle"></i> Conciencia Social</li>
+                            <li><i class="fas fa-check-circle"></i> Honestidad</li>
+                            <li><i class="fas fa-check-circle"></i> Generosidad</li>
+                            <li><i class="fas fa-check-circle"></i> Espíritu de Servicio</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                 <div class="about-images">
+                <div class="about-image-main">
+                    <img src="images/ayuda-donaciones.jpeg" alt="Equipo BRED trabajando">
+                </div>
+                 <div class="about-images">
+                 <div class="about-images">
+                <div class="about-image-main">
+                    <img src="images/quienes-somos2.jpeg" alt="Equipo BRED trabajando">
+                </div>
+                <div class="about-image-main">
+                    <img src="images/quienes-somos3.jpeg" alt="Equipo BRED trabajando">
+                </div>
+                <div class="about-image-main">
+                    <img src="images/quienes-somos4.jpeg" alt="Equipo BRED trabajando">
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h4>3,237+</h4>
+                        <p>Familias beneficiadas</p>
+                    </div>
+                    <div class="stat">
+                        <h4>9,711+</h4>
+                        <p>Personas impactadas</p>
+                    </div>
+                    <div class="stat">
+                        <h4>5</h4>
+                        <p>Municipios atendidos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- Nueva Sección: Nuestros Programas -->
+<section id="programas" class="programs">
+    <div class="container">
+        <div class="section-title">
+            <h2>Nuestros Programas</h2>
+            <p class="section-subtitle">Proyectos transformadores para Colima</p>
+        </div>
+        
+        <div class="programs-grid">
+            <div class="program-card">
+                <div class="program-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3>DIGNIFICA TU VIDA</h3>
+                <p>Programa integral de apoyo para mejorar las condiciones de vida de familias en situación vulnerable.</p>
+            </div>
+            
+            <div class="program-card">
+                <div class="program-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>PSICOLOGÍA Y DESARROLLO HUMANO</h3>
+                <p>Acompañamiento psicológico y desarrollo personal para fortalecer capacidades individuales y familiares.</p>
+            </div>
+            
+            <div class="program-card">
+                <div class="program-icon">
+                    <i class="fas fa-backpack"></i>
+                </div>
+                <h3>MOCHILA SOLIDARIA</h3>
+                <p>Dotación de útiles escolares y materiales educativos para niños y jóvenes en situación vulnerable.</p>
+            </div>
+            
+            <div class="program-card">
+                <div class="program-icon">
+                    <i class="fas fa-user-friends"></i>
+                </div>
+                <h3>HABITANTES DE LA CALLE</h3>
+                <p>Atención y apoyo integral para personas en situación de calle.</p>
+            </div>
+            
+            <div class="program-card">
+                <div class="program-icon">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+                <h3>PADRINO BRED</h3>
+                <p>Programa de apadrinamiento para apoyo directo a familias y personas en situación crítica.</p>
+            </div>
+            
+            <div class="program-card">
+                <div class="program-icon">
+                    <i class="fas fa-recycle"></i>
+                </div>
+                <h3>Dónalo! ¡Si no lo usas!</h3>
+                <p>Campaña permanente de recepción de donaciones de artículos en buen estado.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección Cómo ayudar -->
+    <section id="ayudar">
+        <div class="container">
+            <div class="section-title">
+                <h2>Cómo Puedes Ayudar</h2>
+                <p class="section-subtitle">Cada contribución hace la diferencia</p>
+            </div>
+            
+            <div class="help-options">
+                <div class="help-card">
+                    <div class="help-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>Donar Artículos</h3>
+                    <p>Ropa, calzado, muebles, electrodomésticos, utensilios de cocina y otros enseres domésticos en buen estado.</p>
+                </div>
+                
+                <div class="help-card">
+                    <div class="help-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Donaciones Monetarias</h3>
+                    <p>Contribuciones económicas que nos permiten cubrir gastos operativos y apoyar a más familias necesitadas.</p>
+                </div>
+                
+                <div class="help-card">
+                    <div class="help-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Voluntariado</h3>
+                    <p>Únete a nuestro equipo de voluntarios para clasificar, organizar y distribuir las donaciones.</p>
+                </div>
+                
+                <div class="help-card">
+                    <div class="help-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Difusión</h3>
+                    <p>Comparte nuestra misión en redes sociales y con tus contactos para llegar a más personas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Nuestro Impacto -->
+<section id="impacto" class="impact">
+    <div class="container">
+        <div class="section-title">
+            <h2>Nuestro Impacto 2025</h2>
+            <p class="section-subtitle">Resultados que transforman vidas en Colima</p>
+        </div>
+        
+        <div class="impact-content">
+            <div class="impact-stats">
+                <div class="impact-stat">
+                    <h4>3,237</h4>
+                    <p>Familias beneficiadas directamente</p>
+                </div>
+                <div class="impact-stat">
+                    <h4>9,711</h4>
+                    <p>Personas impactadas indirectamente</p>
+                </div>
+                <div class="impact-stat">
+                    <h4>65.7%</h4>
+                    <p>Atención en zonas rurales</p>
+                </div>
+                <div class="impact-stat">
+                    <h4>5</h4>
+                    <p>Municipios atendidos</p>
+                </div>
+            </div>
+            
+            <div class="impact-info">
+                <div class="impact-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> Zonas Atendidas</h3>
+                    <p>Actualmente nuestra asistencia se enfoca estratégicamente en 5 municipios clave del estado:</p>
+                    <ul class="municipios-list">
+                        <li><i class="fas fa-check"></i> Colima</li>
+                        <li><i class="fas fa-check"></i> Comala</li>
+                        <li><i class="fas fa-check"></i> Coquimatlán</li>
+                        <li><i class="fas fa-check"></i> Tecomán</li>
+                        <li><i class="fas fa-check"></i> Armería</li>
+                    </ul>
+                </div>
+                
+                <div class="impact-card">
+                    <h3><i class="fas fa-users"></i> Población Objetivo</h3>
+                    <p>Personas de escasos recursos en situación de pobreza moderada y extrema, en condición vulnerable, con ingreso económico por debajo de la línea de bienestar, principalmente en:</p>
+                    <ul>
+                        <li>Colonias marginadas</li>
+                        <li>Zonas rurales</li>
+                        <li>Comunidades</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="ods-section">
+                <h3>Contribuimos a los Objetivos de Desarrollo Sostenible ONU 2030</h3>
+                <div class="ods-grid">
+                    <div class="ods-card">
+                        <div class="ods-number">1</div>
+                        <h4>Fin de la Pobreza</h4>
+                    </div>
+                    <div class="ods-card">
+                        <div class="ods-number">4</div>
+                        <h4>Educación de Calidad</h4>
+                    </div>
+                    <div class="ods-card">
+                        <div class="ods-number">10</div>
+                        <h4>Reducción de la Desigualdad</h4>
+                    </div>
+                    <div class="ods-card">
+                        <div class="ods-number">12</div>
+                        <h4>Producción y Consumo Responsable</h4>
+                    </div>
+                    <div class="ods-card">
+                        <div class="ods-number">17</div>
+                        <h4>Alianzas para Lograr los Objetivos</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección Donar -->
+    <section id="donar" class="donation">
+        <div class="container">
+            <div class="section-title">
+                <h2>Haz Tu Donación</h2>
+                <p class="section-subtitle">Tu apoyo transforma vidas</p>
+            </div>
+            
+            <div class="donation-content">
+                <div class="donation-text">
+                    <h3>¿Qué puedes donar?</h3>
+                    <ul class="donation-list">
+                        <li><i class="fas fa-check-circle"></i> Ropa en buen estado (todas las edades)</li>
+                        <li><i class="fas fa-check-circle"></i> Calzado (nuevo o en buen estado)</li>
+                        <li><i class="fas fa-check-circle"></i> Muebles funcionales</li>
+                        <li><i class="fas fa-check-circle"></i> Electrodomésticos que funcionen</li>
+                        <li><i class="fas fa-check-circle"></i> Utensilios de cocina</li>
+                        <li><i class="fas fa-check-circle"></i> Ropa de cama y toallas</li>
+                        <li><i class="fas fa-check-circle"></i> Artículos de bebé</li>
+                    </ul>
+                    
+                    <div class="donation-instructions">
+                        <h4>Instrucciones para donar:</h4>
+                        <p>1. Asegúrate de que los artículos estén en buen estado</p>
+                        <p>2. Limpia y clasifica antes de entregar</p>
+                        <p>3. Llámanos para coordinar la recolección</p>
+                        <p>4. Llevar la donacion presencial a la fundacion ubicada en Medellin</p>
+                    </div>
+                </div>
+                
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contacto</h2>
+                <p class="section-subtitle">Estamos aquí para ayudarte</p>
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h3>Dirección</h3>
+                        <p>Medellín #585, Col. Popular</p>
+                        <p>Colima, México, 28070</p>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h3>Teléfono</h3>
+                        <p>312 554 4355</p>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h3>Correo Electrónico</h3>
+                        <p>bredcolima1@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div>
+                        <h3>Horarios de Atención</h3>
+                        <p>Lunes a Viernes: 8:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mapa interactivo -->
+            <div class="map-container">
+                <h3>Encuéntranos en el Mapa</h3>
+                <div id="map" style="height: 400px; width: 100%; border-radius: 8px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Nuestros Aliados -->
+<section id="aliados" class="allies">
+    <div class="container">
+        <div class="section-title">
+            <h2>Nuestros Aliados</h2>
+            <p class="section-subtitle">Juntos transformamos Colima</p>
+        </div>
+        
+        <div class="allies-content">
+            <div class="allies-text">
+                <h3>Colaboradores que hacen posible nuestra labor</h3>
+                <p>Nuestro trabajo es posible gracias al apoyo de empresas, organizaciones y personas comprometidas con el desarrollo social de Colima.</p>
+              <div class="challenges">
+                    <h4>Nuestros principales retos y áreas de oportunidad:</h4>
+                    <ul>
+                        <li><i class="fas fa-truck"></i> Vehículo de carga</li>
+                        <li><i class="fas fa-box-open"></i> Donativos de productos nuevos y económicos</li>
+                        <li><i class="fas fa-warehouse"></i> Bodega adecuada</li>
+                        <li><i class="fas fa-clipboard-list"></i> Sistema de control de inventarios</li>
+                        <li><i class="fas fa-graduation-cap"></i> Capacitación continua</li>
+                        <li><i class="fas fa-users"></i> Más voluntarios</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="allies-logos">
+                <h4>Empresas e Instituciones que nos apoyan:</h4>
+                <div class="logos-grid">
+                    <!-- Aquí puedes agregar los logos de tus patrocinadores -->
+                    <div class="logo-item"><img src="images/aliado1.jpg" alt="Aliado 1"></div>
+                    <div class="logo-item"><img src="images/aliado2.jpg" alt="Aliado 2"></div>
+                    <div class="logo-item"><img src="images/aliado3.jpg" alt="Aliado 3"></div>
+                    <div class="logo-item"><img src="images/aliado4.jpg" alt="Aliado 4"></div>
+                    <div class="logo-item"><img src="images/aliado5.jpg" alt="Aliado 5"></div>
+                    <div class="logo-item"><img src="images/aliado6.jpg" alt="Aliado 6"></div>
+                </div>
+                
+                <div class="become-ally">
+                    <h4>¿Quieres ser nuestro aliado?</h4>
+                    <p>Únete a nuestra red de colaboradores y ayuda a transformar más vidas en Colima.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="images/logo-bred.jpg" class="footer-logo-img">
+                        <span>B<span>RED</span></span>
+                    </div>
+                    <p>Fundación sin fines de lucro dedicada a ayudar a familias en situación vulnerable a través de donaciones de ropa y enseres domésticos en Colima, México.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#acerca">Quiénes Somos</a></li>
+                    <li><a href="#programas">Programas</a></li>
+                    <li><a href="#impacto">Nuestro Impacto</a></li>
+                    <li><a href="#ayudar">Cómo ayudar</a></li>
+                    <li><a href="#aliados">Aliados</a></li>
+                    <li><a href="#donar">Donar</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <p>Conéctate con nosotros en redes sociales</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/BRED-Colima-IAP" target="_blank" class="social-icon facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/bredcolima" target="_blank" class="social-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 BRED Colima IAP - Banco de Ropa y Enseres Domésticos Colima</p>
+                <p>Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
